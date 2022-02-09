@@ -11,18 +11,24 @@ header {
 }
 
 .header-group {
+  width: 1024px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.container {
-  width: 1024px;
-  margin: 0 auto;
-}
-
 .logo {
   height: 70px;
+}
+
+.hamburgermenu {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 40px;
+  color: #fafafa;
 }
 
 .nav-bar {
@@ -125,6 +131,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow-wrap: normal;
 }
 
 .pimage {
@@ -262,4 +269,153 @@ footer p {
   font-size: 16px;
   color: #fafafa;
   margin: auto;
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    height: 50px;
+  }
+
+  .header-group {
+    width: 90%;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburgermenu {
+    display: block;
+    margin: 5px;
+  }
+
+  .mv {
+    background-image: url(img/code.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mv-text h1 {
+    font-size: 40px;
+  }
+
+  .mv-text p {
+    font-size: 18px;
+  }
+  .box {
+    width: 90%;
+  }
+
+  .head-text {
+    font-size: 32px;
+  }
+
+  .main-text {
+    text-align: center;
+    overflow-wrap: normal;
+  }
+
+  .pimage {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .image:nth-child(odd) {
+    display: none;
+  }
+
+  .image:nth-child(even) {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .image:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .box2 {
+    width: 90%;
+  }
+
+  .ftext {
+    flex-wrap: wrap;
+  }
+
+  .text-box:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  .text-box:nth-child(3) {
+    margin-top: 10px;
+  }
+
+  .box3 {
+    width: 90%;
+  }
+  .pbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pbox2 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .myname {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 90%;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  .myskill {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .box3 {
+    width: 90%;
+  }
+
+  .box4 {
+    width: 90%;
+  }
+
+  .cbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .address {
+    margin-top: 5px;
+  }
+
+  .ph3:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .ph3 {
+    margin-top: 20px;
+  }
+
+  .text-box1 {
+    text-align: center;
+  }
+
+  footer {
+    height: 60px;
+  }
 }
